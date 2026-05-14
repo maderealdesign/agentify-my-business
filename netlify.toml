@@ -1,11 +1,21 @@
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
-
 [build]
   command = "npm run build"
   publish = "dist"
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
 [build.environment]
   NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+[context.production]
+  environment = { BUILD_TYPE = "production" }
+
+[context.deploy-preview]
+  command = "npm run build"
+
+[context.branch-deploy]
+  command = "npm run build"
