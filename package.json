@@ -1,0 +1,23 @@
+{
+  "name": "agentify-my-business",
+  "version": "1.0.0",
+  "description": "HermesOS - The autonomous agent, without the terminal",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "lucide-react": "^0.454.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^6.0.3"
+  }
+}
